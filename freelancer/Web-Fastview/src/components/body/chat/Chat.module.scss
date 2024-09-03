@@ -1,0 +1,54 @@
+.message__container {
+    min-width:100%;
+    overflow-y: auto;
+    max-height: 400px;
+    scroll-behavior: smooth;
+}
+
+.buttons {
+    .button {
+        flex: 0 0 27%;
+
+        button {
+            padding-left:5px!important;
+            padding-right:5px!important;
+            width:100%;
+        }
+    }
+
+    .send {
+        flex: 0 0 40%;
+
+        button {
+            background:#fff!important;
+            color:#3186C3!important;     
+            
+            [role="status"] {
+                border-color:#3186C3;
+                border-right-color: transparent;
+            }
+        }
+    }
+}
+
+.rate {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    >div {
+        flex:1;
+
+        >button {
+            width:100%;
+        }
+    }
+}
+
+@media print{
+    .message__container {
+        max-height:none;
+        overflow:visible;
+    }
+}

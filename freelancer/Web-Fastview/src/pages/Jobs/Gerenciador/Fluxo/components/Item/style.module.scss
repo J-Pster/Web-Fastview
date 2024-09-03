@@ -1,0 +1,76 @@
+.item {
+    background:#fff;
+    padding:10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    width:280px;
+    color:#8b91a0;
+    cursor:pointer;
+
+    .title {
+        &:first-child {
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .icon {
+        font-size:10px;
+    }
+
+    &.loading {
+        background: #d9dde0;
+        position:relative;
+        padding:0;
+
+        >div {
+            width:100%;
+            height:44px;
+            overflow:hidden;
+            position:relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.3);
+                filter: blur(10px);
+                z-index: 1;
+                animation: linear infinite;
+                animation-name: shine;
+                animation-duration: .5s;
+                -webkit-animation: linear infinite;
+                -webkit-animation-name: shine;
+                -webkit-animation-duration: .5s;
+            }
+        }
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: calc(100% + 380px);
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: calc(100% + 380px);
+    }
+}

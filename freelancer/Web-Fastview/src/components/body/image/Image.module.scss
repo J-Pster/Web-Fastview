@@ -1,0 +1,15 @@
+.image {
+    background-size:cover;
+    position:relative;
+    width:100px;
+    height:120px;
+    border-radius:4px;
+
+    &:hover {
+        filter:brightness(.9);
+    }
+}
+
+td .image {
+    margin:5px 0;
+}

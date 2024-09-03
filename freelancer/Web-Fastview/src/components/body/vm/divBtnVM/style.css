@@ -1,0 +1,6 @@
+.divBtnBaixoVM {
+    position: absolute;
+    right: -10px;
+    bottom: -2px;
+    z-index: 3;
+}

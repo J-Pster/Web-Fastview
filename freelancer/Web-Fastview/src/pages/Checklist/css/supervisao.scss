@@ -1,0 +1,93 @@
+.supervisao {
+    padding:30px 0 50px;
+    overflow-x: hidden;
+
+    .infinite-scroll-component {
+        overflow:hidden!important;
+    }
+
+    h1 {
+        margin:0 30px 30px;
+    }
+
+    .swiper_supervisao {
+        padding:0 30px;
+        overflow:visible;
+        display:flex;
+        margin-bottom:30px;
+
+        .swiper-wrapper {
+            padding-top:0;
+            height:auto;
+            width:226px!important;
+    
+            .swiper-slide {
+                height:100%;
+                
+                &:hover {
+                    z-index:1;
+                }
+            }
+        }
+    
+        .swiper-slide-visible:last-of-type {
+            >div {
+                transform-origin:right;
+            }
+        }
+    
+        .swiper-slide-visible:first-of-type {
+            >div {
+                transform-origin:left;
+            }
+        }
+        
+        >.swiper-button-prev,
+        >.swiper-button-next {
+            position:absolute!important;
+            top:50%!important;
+    
+            &:after {
+                font-size:24px;
+            }
+        }
+        
+        >.swiper-button-prev {
+            left:0;
+            background: linear-gradient(to left, transparent, rgba(229, 233, 236, .8) 60%);
+        
+            // &:hover {
+            //     background: linear-gradient(to left, transparent, #e5e9ec 60%);
+            // }
+        }
+        
+        >.swiper-button-next {
+            background: linear-gradient(to right, transparent, rgba(229, 233, 236, .8) 60%);
+        
+            // &:hover {
+            //     background: linear-gradient(to right, transparent, #e5e9ec 60%);
+            // }
+        }
+        
+        >.swiper-button-next.swiper-button-disabled,
+        >.swiper-button-prev.swiper-button-disabled {
+            opacity:0!important;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width:768px){
+    .supervisao {    
+        h1 {
+            // margin:0 25px 30px;
+        }
+    }
+
+    .swiper_foto {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display:flex!important;
+        }
+    }
+}

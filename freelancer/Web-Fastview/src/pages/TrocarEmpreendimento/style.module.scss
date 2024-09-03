@@ -1,0 +1,13 @@
+.gerenciador {
+    [data-fullheight] {
+        height:calc(100vh - 218px)!important;
+    }
+}
+
+@media screen and (max-width:500px){
+    .gerenciador {
+        [data-fullheight] {
+            height:auto!important;
+        }
+    }
+}

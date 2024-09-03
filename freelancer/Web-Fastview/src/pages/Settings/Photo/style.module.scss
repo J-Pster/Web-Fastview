@@ -1,0 +1,10 @@
+.user_image {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+
+    >div {
+        height:180px!important;
+    }
+}

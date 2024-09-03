@@ -1,0 +1,16 @@
+.container_motivos {
+    margin-bottom:10px;
+
+    [data-input] {
+        padding-left:0;
+        background:#fff!important;
+    }
+}
+
+.modal {
+    form {
+        [data-select] {
+            margin-bottom:10px;
+        }
+    }
+}

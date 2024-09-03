@@ -1,0 +1,192 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    
+    .left {
+        position:relative;
+        width: 50%;
+        height: 100vh;
+        background: linear-gradient(-45deg, #06164a, #062058, #043368, #034e82);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        max-height:100vh;
+
+        svg {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: white!important;
+        max-height:100vh;
+        overflow:auto;
+        padding:50px;
+
+        .logo {
+            display:block;
+            margin:0 auto;
+            width:auto;
+            max-width:100%;
+            max-height:300px;
+        }
+
+        .form_container {
+            width: 418px;
+            
+            .form_container_change {
+                display:flex;
+                gap:50px;
+                overflow:hidden;
+
+                >div {
+                    width:418px;
+
+                    transition:transform ease .3s, opacity ease .3s;
+                }
+
+                .login {
+                    // transform:translateX(-468px);
+                    // opacity:0;
+
+                    &.active {
+                        transform:translateX(0);
+                        opacity:1;
+                    }
+                }
+
+                .recover {
+                    transform:translateX(0);
+                    // opacity:0;
+
+                    &.active {
+                        // transform:translateX(-468px);
+                        opacity:1;
+                    }
+                }
+
+                .request {
+                    transform:translateX(0);
+                    // opacity:0;
+
+                    &.active {
+                        // transform:translateX(-936px);
+                        opacity:1;
+                    }
+                }
+            }
+    
+            form {
+                display: flex;
+                background: none;
+                border: none;
+                box-shadow: none;
+                flex-direction: column;
+                padding: 0;
+                padding-top: 16px;
+    
+                a {
+                    margin-top: 16px;
+                    align-self: end;
+                    cursor: pointer;
+                    color: #A1A7AE;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+    
+                button {
+                    width: 100%;
+                    border-radius: 8px;
+                    color: white;
+                    padding: 10px 0;
+                    margin-top: 16px;
+                }
+            }    
+        }
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+
+        a {
+            cursor: pointer;
+            font-size: 12px;
+            color: #81878D;
+        }
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width:1100px) {
+    .container{
+        justify-content: center;
+
+        .left{
+            display: none
+        }
+
+        .right {
+            height: 100vh;
+
+            .form_container {
+                padding: 20px;
+
+                form {
+                    width: 100%;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .container{
+        .left {
+            display: none;
+            max-height:none;
+        }
+
+        .right {
+            height: 100vh;
+            width: 100%;
+            max-height:none;
+        
+            .form_container {
+                width: calc(100% - 20px);
+                padding: 0;
+
+                .form {
+                    width: 100%!important;
+                }
+            }
+
+            .logo {
+                width:200px;
+                max-width:80%;   
+            }
+        }
+    }
+}

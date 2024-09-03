@@ -1,0 +1,9 @@
+.documentPDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    justify-items: end;
+    padding-top: 8px;
+    background-color: #e5e9ec;
+
+}

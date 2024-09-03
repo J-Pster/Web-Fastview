@@ -1,0 +1,14 @@
+.commentHashtag {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #757575;
+    border: 2px solid #e5e9ec;
+    border-radius: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 2px 8px;
+    margin: 10px 5px 10px 0 !important;
+}

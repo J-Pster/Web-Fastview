@@ -1,0 +1,114 @@
+.card__home {
+    height: 152px;
+    width: 140px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding:30px;
+    position: relative;
+    box-shadow: 0 7px 20px rgb(0 0 0 / 6%);
+    cursor: pointer;
+    transition: .4s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    div:has([data-icon]) {
+        pointer-events:none;
+    }
+
+    .icon {
+        margin-bottom:15px;
+        pointer-events:none!important;
+        transition:color ease .3s;
+        font-size:30px;
+    }
+
+    .textStyle {
+        font-weight:400;
+        color: #757575;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-bottom:0;
+        transition:color ease .3s;
+    }
+
+    &:hover{
+        background:#0aa699;
+        transform: translate(0px,-4px);
+        transition-property: transform ease .3s, background ease .3s;
+        box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.11);
+        -webkit-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.11);
+
+        .icon {
+            color:#fff;
+        }
+
+        .textStyle {
+            color:#fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .card__home{
+        width: calc(11% - 17px);
+    }
+}
+
+@media screen and (max-width: 1510px) {
+    .card__home{
+        width: calc(13% - 25px);
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .card__home{
+        width: calc(15% - 27px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card__home{
+        width: calc(17% - 21px);
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .card__home{
+        width: calc(20% - 16px);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card__home{
+        width: calc(25% - 15px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card__home{
+        width: calc(33.33% - 15px);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .card__home{
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card__home{
+        .textStyle { 
+            font-size:16px;
+        }
+    }
+}
+
+.card__home.resize {
+    width:auto;
+    flex: 1;
+    min-width:140px;
+}

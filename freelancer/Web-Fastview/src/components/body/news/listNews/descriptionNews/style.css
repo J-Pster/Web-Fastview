@@ -1,0 +1,15 @@
+.descricaoNews {
+    color: #212529;
+    overflow: hidden;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 14!important;   
+}
+
+.descricaoNews p {
+    margin-bottom:0;
+}

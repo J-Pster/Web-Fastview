@@ -1,0 +1,21 @@
+.container {
+    padding:24px;
+    position:relative;
+    width:100%;
+    min-height:calc(100vh - 136px);
+    overflow:auto;
+    scroll-behavior: smooth;
+}
+
+// IMPRESSÃO
+@media print {
+    .container {
+        padding-left:0;
+        padding-right:0;
+
+        [data-row] {
+            margin-left:0;
+            margin-right:0;
+        }
+    }
+}

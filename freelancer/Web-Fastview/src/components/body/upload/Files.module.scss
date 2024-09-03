@@ -1,0 +1,27 @@
+.files {
+    background:#f9f9f9;
+    margin-bottom:20px;
+    padding:6px 10px;
+    border-radius:4px;
+
+    a {
+        display:block;
+        padding:3px 0;
+    }
+}
+
+.file__link {
+    color:#8b91a0!important;
+    font-size:14px;
+    text-decoration:none;
+
+    svg {
+        margin-left:4px;
+        position:relative;
+        top:-1px;
+    }
+
+    div {
+        pointer-events:none;
+    }
+}

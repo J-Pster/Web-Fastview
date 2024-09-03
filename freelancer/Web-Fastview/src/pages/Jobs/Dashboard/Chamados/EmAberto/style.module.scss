@@ -1,0 +1,44 @@
+.number {
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 30%;
+    top: 35%;
+    left: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#666;
+
+    >div {
+        text-align:center;
+
+        span {
+            display:block;
+            font-size:46px;
+            line-height:1;
+        }
+    }    
+}
+
+@media screen and (max-width:1380px){
+    .number {
+        >div {
+            span {
+                font-size:30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1260px){
+    .number {
+        >div {
+            font-size:13px;
+            
+            span {
+                font-size:28px;
+            }
+        }
+    }
+}

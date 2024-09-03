@@ -1,0 +1,64 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: white;
+
+  label {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  img {
+    width: 60%;
+  }
+}
+
+.buttonFile {
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: white;
+  color: #6d6d6d;
+  width: 100%;
+
+  &.onlyIcon {
+    position:absolute;
+    width:24px;
+    right:0;
+    z-index:1;
+    background-color:transparent;
+  }
+
+  label {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+[data-box_icon] {
+  [data-icon] {
+    .icon_input_image {
+      font-size:30px!important;
+    }
+  }
+}
+
+@media screen and (max-width:580px){
+  [data-box_icon] {
+    [data-icon] {
+      .icon_input_file {
+        font-size:24px!important;
+      }
+    }
+  }
+}

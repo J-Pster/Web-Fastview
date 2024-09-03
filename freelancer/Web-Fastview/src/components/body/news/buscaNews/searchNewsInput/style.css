@@ -1,0 +1,11 @@
+.inputBuscaNews {
+    border: none;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.inputBuscaNews,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

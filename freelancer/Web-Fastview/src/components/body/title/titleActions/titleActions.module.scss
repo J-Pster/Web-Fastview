@@ -1,0 +1,17 @@
+.titleActions {
+    display:flex;
+    align-items:center;
+    gap:0 7px;
+}
+
+@media print {
+    .titleActions {
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .titleActions {
+        gap:0 10px;
+    }
+}

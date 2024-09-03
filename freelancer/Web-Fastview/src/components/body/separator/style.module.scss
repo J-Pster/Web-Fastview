@@ -1,0 +1,27 @@
+.separator {
+    position:relative;
+    text-align:center;
+    display:block;
+    min-height:20px;
+
+    &:before {
+        content:'';
+        position:absolute;
+        top:50%;
+        left:0;
+        width:100%;
+        height:1px;
+        background:#e5e9ec;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 13px;
+        color: #aaa;
+        position:relative;
+        display:inline-block;
+        background:#fff;
+        padding:0 10px;
+        margin-bottom:0;
+    }
+}

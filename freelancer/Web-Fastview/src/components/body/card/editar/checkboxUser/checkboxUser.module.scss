@@ -1,0 +1,40 @@
+.date {
+    margin: 1px 0 0!important;
+    padding: 2px 10px;
+
+    >label,
+    >[data-box_icon] {
+        display:none;
+    }
+
+    input {
+        width:73px;
+    }
+}
+
+.horario {
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.container_user {
+    flex:1;
+}
+
+@media screen and (max-width:500px){
+    [class="flex-1"] {
+        overflow:hidden;
+        margin-right:15px;
+        padding:2px 0;
+    }
+
+    .date {
+        input {
+            width:92px;
+        }
+    }
+
+    .horario {
+        width:94px;
+    }
+}

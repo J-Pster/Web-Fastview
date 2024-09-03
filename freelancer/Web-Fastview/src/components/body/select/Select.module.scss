@@ -1,0 +1,115 @@
+.box__select {
+    background:#fff;
+    border:1px solid #e5e9ec;
+    border-radius:4px;     
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition:background ease .3s;
+    padding:1px 12px;
+    width:100%;
+
+    &.disabled {
+        opacity:.4;
+        border:1px solid #cacdcf;
+        pointer-events:none;
+    }
+
+    &.readonly {
+        pointer-events:none;
+    }
+
+    >div {
+        width:100%;
+
+        >span:nth-child(1),
+        >span:nth-child(2) {
+            display:none;
+        }
+
+        >div:nth-child(1) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &.box__select_focus {
+        background:#f4f5f7;
+    }
+
+    label {
+        padding-right:8px;
+        font-weight:400;
+        font-size:13px;
+        color:#aaa;
+        white-space:nowrap;
+    }
+
+    &.loading {
+        height:42px;
+        pointer-events:none;
+        position:relative;
+        overflow:hidden;
+        border:none;
+        background:#eff1f3;
+
+        &:after {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100px;
+            height:100%;
+            background:rgba(255,255,255,0.3);
+            filter:blur(10px);
+            z-index:1;
+            animation: linear infinite;
+            animation-name: shine;
+            animation-duration:.5s;
+            -webkit-animation: linear infinite;
+            -webkit-animation-name: shine;
+            -webkit-animation-duration:.5s;
+        }
+    }
+
+    &.isRtl {        
+        >div {        
+            >div:nth-of-type(1) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+@keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+    .box__select {
+        padding-top:6px;
+        padding-bottom:6px;
+
+        label {
+            font-size:16px;
+        }
+
+        &.loading {
+            height:52px;
+        }
+    }
+}

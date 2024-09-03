@@ -1,0 +1,13 @@
+.mainContainerComunicados{
+    width: 520px;
+    max-width: 100%;
+    background-color: white;
+    margin-bottom: 4%;
+    padding: 20px;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,0.5);
+    transition: box-shadow ease 0.2s;
+}
+
+.mainContainerComunicados:hover{
+    box-shadow: 0 10px 30px -15px rgba(0,0,0,0.2);
+}

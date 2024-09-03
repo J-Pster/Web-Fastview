@@ -1,0 +1,208 @@
+.filter{
+    display:flex;
+    align-items:center;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:400;
+    margin:0;
+    color:#777;
+    padding-right:5px;
+
+    svg {
+        font-size: 17px;
+        color:hsl(0, 0%, 80%);
+        width:15px;
+        position: relative;
+        right: -4px;
+        transition:color ease .3s;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -11px;
+        width: calc(100% + 20px);
+        border-radius: 6px;
+        z-index: -1;
+    }
+
+    &.filter__active {
+        svg {
+            color:#666;
+        }
+    }
+
+    &.filter__filtered {
+        color:#0090d9!important;
+    }
+}
+
+.boxFilter {
+    position:absolute;
+    top:calc(100% + 10px);
+    right:0;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:6px;
+    box-shadow: 0 30px 50px -15px rgba(0,0,0,0.3);
+    text-transform:none;
+    letter-spacing:0;    
+    width:280px;
+    display:none;
+
+    &.boxFilter__active {
+        display:block;
+    }
+
+    .boxFilter__header {
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:16px 16px 0;
+        font-size:15px;
+        line-height:1;
+
+        svg {
+            cursor:pointer;
+        }
+    }
+
+    .boxFilter__body {
+        padding:13px 16px 10px;
+
+        .boxFilter__title {
+            font-size:15px;
+        }
+
+        .boxFilter__close {
+            font-size:14px;
+        }
+
+        input {
+            font-size:14px;
+        }
+
+        [class="DatePicker "] {
+            width:100%;
+        }
+
+        label {
+            font-size:14px;
+        }
+
+        [data-input] {
+            padding:6px 10px!important;
+            border:1px solid #e5e9ec!important;
+        }
+    }    
+
+    .boxFilter__footer {
+        border-top:1px solid #ddd;
+        padding:13px 16px;
+
+        button{
+            padding:6px 15px;
+            margin-top:0;
+        }
+    }
+
+    .checkbox__items {
+        margin:0;
+        padding:1px 16px 8px;
+        text-align:left;
+        max-height: calc(100vh - 200px);
+        overflow: auto;
+        position:relative;
+
+        &>div {
+            position:relative;
+            z-index:1;
+
+            &:last-child {
+                z-index:3;
+            }
+        }
+
+        &:after {
+            // content:'';
+            position:absolute;
+            bottom:0;
+            background:linear-gradient(to top, #fff, transparent);
+            width:calc(100% - 8px);
+            height:50px;
+            z-index:2;
+        }
+
+        label {
+            min-width:calc(100% - 15px);
+            max-width:100%;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            text-transform:capitalize;
+            color:#576475;
+            font-size:14px;
+        }
+
+        &.no_capitalize {
+            label {
+                text-transform:none;
+            }
+        }
+
+        [data-input] {
+            padding-top:3px!important;
+            padding-bottom:3px!important;
+            height:auto;
+            display:flex;
+        }
+
+        [role="status"] {
+            top:-3px;
+        }
+    }
+}
+
+@media print {
+    .filter{    
+        svg {
+            display:none;
+        }
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+    .boxFilter {
+        position: fixed;
+        top: 60px;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        height:calc(100vh - 60px);
+        border-radius:0;
+        z-index: 9;
+        padding:10px 5px;
+
+        .boxFilter__body {
+            margin-bottom:10px;
+
+            [data-input] {
+                padding-top:12px!important;
+                padding-bottom:12px;
+            }
+        }
+
+        .checkbox__items {
+            max-height:calc(100vh - 84px);
+
+            [data-input] {
+                padding-bottom:12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#card_maximized_container {
+    div.card_element {
+        border:1px solid #fff;
+
+        &.focus {
+            border-color:#0396d8;
+        }
+    }
+
+    .container_box{
+        &.focus {
+            >div>div {
+                border-color:#0396d8;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.button-obras-div-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.button-obras-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding: 10px 20px;
+    gap: 5px;
+    border-radius: 100px;
+    border: none;
+    background-color: #3186C3;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: capitalize;
+}

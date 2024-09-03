@@ -1,0 +1,33 @@
+.box {
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:24px;    
+
+    .header {
+        background:#f0f5f8;
+        padding:15px 20px;
+        color: #8b91a0;
+        font-size: 14px;
+    }
+
+    .body {
+        background:#fff;
+        padding:15px 20px;
+        position:relative;
+    }
+
+    &.borderTopRadiusNone {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &.borderBottomRadiusNone {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &.borderBottomNone {
+        border-bottom:none;
+    }
+}

@@ -1,0 +1,9 @@
+.clickTitleComunicados{
+    cursor: pointer!important;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    color: #4c505b;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+}

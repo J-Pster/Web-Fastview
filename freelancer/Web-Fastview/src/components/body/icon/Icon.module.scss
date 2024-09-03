@@ -1,0 +1,151 @@
+.iconContainer {
+    display:inline-block;
+    position:relative;
+
+    [data-icon] {
+        &:before{
+            content:'';
+            position:absolute;
+            top:calc(50% - 16px);
+            left:calc(50% - 17px);
+            width:34px;
+            height:34px;
+            background:rgba(0,0,0,0.06);
+            border-radius:50%;
+            z-index:1;
+            transition:transform ease 0s;
+            transform:scale(0);
+            cursor:pointer;
+        }
+
+        &:hover {
+            &:before {
+                transform:scale(1);
+                transition:transform ease .1s;
+            }
+        }
+    }
+
+    svg,
+    lord-icon {
+        position:relative;
+        color:#97a3b3;
+    }
+
+    lord-icon {
+        vertical-align:middle;
+        margin:-3px 2px;
+        transform: scale(0.8);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        
+        &.ready {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    [class="react-datepicker-wrapper"] {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;        
+        z-index:1;
+
+        input {
+            cursor: pointer;
+        }
+    }
+
+    &.icon__disabled {
+        pointer-events:initial;
+        
+        [data-icon] {
+            &:before {
+                display:none;
+            }
+        }
+
+        >div {
+            pointer-events:none;
+            opacity:.35;
+        }
+    }
+
+    &.icon__readonly {
+        >div {
+            pointer-events:none;
+        }
+    }
+}
+
+// h1 {
+//     .iconContainer {    
+//         &:before{
+//             margin-left:4px;
+//         }
+//     }
+// }
+
+@media screen and (max-width:768px){
+    .iconContainer {
+        [data-icon] {
+            svg,
+            lord-icon {
+                font-size:24px;
+            }
+        }
+
+        &.icon__size_lg {
+            [data-icon] {
+                svg,
+                lord-icon {
+                    font-size:32px!important;
+                    margin:0 10px!important;
+                }
+            }   
+            
+            &:first-child {
+                [data-icon] {
+                    svg,
+                    lord-icon {
+                        margin-left:0!important;
+                    }
+                }     
+            }
+
+            &:last-child {
+                [data-icon] {
+                    svg,
+                    lord-icon {
+                        margin-right:0!important;
+                    }
+                }     
+            }
+        }
+    }
+}
+
+.unpin {
+    &:after {
+        content:'teste';
+    }    
+}
+
+.badge {
+    background:#E55050;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    z-index: 1;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 8px;
+    line-height: 12px;
+    top: -2px;
+    right: -2px;
+}

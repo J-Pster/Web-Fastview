@@ -1,0 +1,68 @@
+.quill-component-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ql-snow.ql-toolbar {
+    background: #f8fafc;
+    border-radius: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: calc(560px);
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.ql-snow.ql-toolbar button {
+    align-items: center;
+    opacity: 0.6;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+}
+
+.ql-snow.ql-toolbar button:hover {
+    color: #97A3B3 !important;
+}
+
+.quill-component-editor.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 28px;
+    opacity: 0.6;
+    border: 2px solid red;
+}
+
+.ql-container.ql-snow {
+    border: none;
+}
+
+.ql-editor {
+    height: 551px;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+    padding: 12px 0 0 12px;
+}
+
+.ql-snow .ql-color-picker .ql-picker-label,
+.ql-snow .ql-icon-picker .ql-picker-label {
+    padding: 2px 0.5px;
+    opacity: 0.6;
+}
+
+.ql-editor>p {
+    color: black;
+    font-size: 16px;
+}
+
+/* .ql-toolbar.ql-snow{
+    margin: 0!important;
+} */

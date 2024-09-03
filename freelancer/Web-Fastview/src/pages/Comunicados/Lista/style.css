@@ -1,0 +1,16 @@
+.comunicado-doc{
+    width: 100%;
+    height: 500px;
+}
+
+.comunicado-a{
+    display: block;
+    background: #f9f9f9;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 6px 0 ;
+}
+
+.comunicado-img{
+    max-width: 100% !important;
+}

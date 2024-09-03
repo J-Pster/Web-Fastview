@@ -1,0 +1,21 @@
+.modalBody {
+    padding:10px 30px 30px;
+
+    &.no__padding {
+        padding:0;
+        overflow:hidden;
+        border-radius: 0.5rem;
+    }
+
+    form {
+        padding:0;
+        box-shadow:none;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+    .modalBody {
+        padding:10px 24px 24px;
+    }
+}

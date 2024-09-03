@@ -1,0 +1,200 @@
+.input__container {
+    background: #fff;
+    border: 1px solid #e5e9ec;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: start;
+    margin-bottom:10px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    overflow-x:hidden;
+    position:relative;
+
+    &.overflow__visible {
+        max-height:none;
+        overflow:visible;
+    }
+
+    [data-icon] {
+        svg {
+            font-size:13px;
+            height:13px;
+        }
+    }
+
+    hr {
+        border-top:1px solid #e5e9ec;
+        opacity:1;
+        margin:10px 0 14px;
+    }
+
+    span {
+        padding-right: 8px;
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom:10px;
+        color: #aaa;
+        white-space: nowrap;
+        position:relative;
+        margin-right:5px;
+    }
+
+    [data-input] {
+        background:#fff!important;
+    }
+    
+    > div > [data-input],
+    > div > div > [data-input] {
+        margin-bottom:0;
+        border:none;
+        padding:0;
+        margin-right:10px;
+        background:none!important;
+
+        input[type="checkbox"] {
+            border-width:.1em;
+        }
+    }
+
+    > div > div > [data-input] {
+        margin-right:0;
+    }
+
+    &.d__block {
+        display:block;
+
+        [data-input] {
+            margin-bottom:10px;
+            display:flex;
+            width:100%;
+
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 13px;
+        color: #aaa;
+        margin-bottom:0;
+    }
+
+    [data-select] {
+        margin:3px 0!important;
+
+        [data-value] {
+            padding-top:0;
+            padding-bottom:0;
+        }
+    }
+
+    [data-select] > div > div {
+        height:25px;
+    }
+
+    &.loading {
+        height:42px;
+        pointer-events:none;
+        position:relative;
+        overflow:hidden;
+        border:none;
+        background:#eff1f3;
+
+        * {
+            display:none!important;
+        }
+
+        &:after {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100px;
+            height:100%;
+            background:rgba(255,255,255,0.3);
+            filter:blur(10px);
+            z-index:1;
+            animation: linear infinite;
+            animation-name: shine;
+            animation-duration:.5s;
+            -webkit-animation: linear infinite;
+            -webkit-animation-name: shine;
+            -webkit-animation-duration:.5s;
+        }
+    }
+
+    &.float {
+        overflow:visible;
+
+        .collapseContainer {
+            position: fixed;
+            width: calc(100% + 2px);
+            background: #fff;
+            border: 1px solid #e5e9ec;
+            left: -1px;
+            border-top: none;
+            max-height: calc(100vh - 250px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding:30px 12px 15px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                width: calc(100% - 24px);
+                height: 1px;
+                background: #e5e9ec;
+            }
+        }
+    }
+}
+
+@keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+@media screen and (max-width:500px){
+    .input__container {
+        span {
+            font-size:16px;
+        }
+
+        > div > [data-input],
+        > div > div > [data-input] {
+            padding:5px 0;
+        }
+
+        &.d__block {
+            > div > [data-input],
+            > div > div > [data-input] {
+                padding:0;
+            }
+        }
+
+        [data-icon] {
+            svg {
+                font-size:24px;
+                height:19px;
+            }
+        }
+    }
+}

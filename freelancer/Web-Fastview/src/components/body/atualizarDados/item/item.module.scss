@@ -1,0 +1,38 @@
+.item {
+    // flex:0 0 calc(25% - 15px);
+    flex:100%;
+    position:relative;
+
+    .actions {
+        position:absolute;
+        top:1px;
+        right:1px;
+        padding:0 12px;
+        height:calc(100% - 2px);
+        display:flex;
+        align-items:center;
+    }
+
+    [data-input] {
+        justify-content:flex-start;
+
+        input {
+            max-width:calc(100% - 140px);
+        }
+    }
+
+    [data-input].input_confirmed {
+        justify-content:flex-start;
+
+        input {
+            max-width:calc(100% - 100px);
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width:500px){
+    .item {
+        flex:0 0 100%;
+    }
+}

@@ -1,0 +1,44 @@
+.container {
+    display:flex;
+    justify-content:flex-end;
+
+    [data-box_icon]{
+        top:20px;
+        right:18px;
+
+        &:before {
+            content:'';
+            position:absolute;
+            left:calc(50% - 1px);
+            bottom:100%;
+            width:2px;
+            height:20px;
+            background:#ddd;
+        }
+    }
+
+    &.left {
+        justify-content:flex-start;
+        
+        [data-box_icon]{
+            right:initial;
+            left:-22px;
+            top:0;
+
+            &:before {
+                display:none;
+            }
+        }
+    }
+
+    &.edit {
+        [data-box_icon]{
+            top:initial;
+            right:initial;
+    
+            &:before {
+                display:none;
+            }
+        }
+    }
+}

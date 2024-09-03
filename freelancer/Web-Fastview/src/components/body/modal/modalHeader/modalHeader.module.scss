@@ -1,0 +1,19 @@
+.modalHeader {
+    border-bottom:none;
+    padding:30px 30px 10px;
+
+    &.no__padding {
+        padding:0;
+    }
+
+    .btn-close:focus {
+        box-shadow:none!important;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+    .modalHeader {
+        padding:24px 24px 10px;
+    }
+}

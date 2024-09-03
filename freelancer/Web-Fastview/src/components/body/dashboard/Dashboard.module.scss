@@ -1,0 +1,38 @@
+.dashboard {
+    width:500px;
+    max-width:100%;
+
+    [data-fullheight] {
+        height:calc(100vh - 234px);
+    }
+
+    table {
+        thead {
+            tr {
+                th:not(:first-child) {
+                    width:1px;
+                    white-space:nowrap;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:first-child {
+                    max-width:200px;
+                }
+
+                td:not(:first-child) {
+                    width:1px;
+                    white-space:nowrap;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .dashboard {
+        margin-bottom:30px;
+    }
+}

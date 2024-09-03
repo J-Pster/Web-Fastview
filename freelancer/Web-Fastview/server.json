@@ -1,0 +1,413 @@
+{
+    "jobs":[
+        {
+            "title": "Ter - 01/11/2022",
+            "cards":[
+                {
+                    "id_job": 7568,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942072,
+                    "data_job": "2022-11-01 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                },
+                {
+                    "id_job": 7569,
+                    "job": "Teste Diferente",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942117,
+                    "data_job": "2022-11-04 08:00:00",
+                    "data_formatada": "04\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                },
+                {
+                    "id_job": 7570,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942162,
+                    "data_job": "2022-11-01 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                }
+            ]        
+        },{
+            "title": "Qua - 02/11/2022",
+            "cards":[
+                {
+                    "id_job": 7571,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942072,
+                    "data_job": "2022-11-01 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                },
+                {
+                    "id_job": 7572,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942162,
+                    "data_job": "2022-11-01 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                }
+            ]   
+        },{
+            "title": "Qui - 03/11/2022",
+            "cards":[]   
+        },{
+            "title": "Sex - 04/11/2022",
+            "cards":[]   
+        },{
+            "title": "Sáb - 05/11/2022",
+            "cards":[]   
+        },{
+            "title": "Dom - 06/11/2022",
+            "cards":[]   
+        },{
+            "title": "Seg - 07/11/2022",
+            "cards":[]   
+        },{
+            "title": "Ter - 08/11/2022",
+            "cards":[]   
+        },{
+            "title": "Qua - 09/11/2022",
+            "cards":[]   
+        },{
+            "title": "Qui - 10/11/2022",
+            "cards":[]   
+        },{
+            "title": "Sex - 11/11/2022",
+            "cards":[]  
+        },{
+            "title": "Sáb - 12/11/2022",
+            "cards":[]   
+        },{
+            "title": "Dom - 13/11/2022",
+            "cards":[]   
+        },{
+            "title": "Seg - 14/11/2022",
+            "cards":[]   
+        },{
+            "title": "Ter - 15/11/2022",
+            "cards":[]   
+        },{
+            "title": "Qua - 16/11/2022",
+            "cards":[]   
+        },{
+            "title": "Qui - 17/11/2022",
+            "cards":[]  
+        },{
+            "title": "Sex - 18/11/2022",
+            "cards":[]   
+        },{
+            "title": "Sáb - 19/11/2022",
+            "cards":[]   
+        },{
+            "title": "Dom - 20/11/2022",
+            "cards":[
+                {
+                    "id_job": 7573,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942072,
+                    "data_job": "2022-11-20 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                },
+                {
+                    "id_job": 7574,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942162,
+                    "data_job": "2022-11-20 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                }
+            ]   
+        },{
+            "title": "Seg - 21/11/2022",
+            "cards":[
+                {
+                    "id_job": 7575,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942072,
+                    "data_job": "2022-11-21 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                },
+                {
+                    "id_job": 7576,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942162,
+                    "data_job": "2022-11-21 18:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                }
+            ]   
+        },{
+            "title": "Ter - 22/11/2022",
+            "cards":[
+                {
+                    "id_job": 7575,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942072,
+                    "data_job": "2022-11-22 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                },
+                {
+                    "id_job": 7576,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942162,
+                    "data_job": "2022-11-22 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                }
+            ]     
+        },{
+            "title": "Qua - 23/11/2022",
+            "cards":[]   
+        },{
+            "title": "Qui - 24/11/2022",
+            "cards":[
+                {
+                    "id_job": 7577,
+                    "job": "Teste Final",
+                    "lote": 8,
+                    "id_categoria": 1819,
+                    "categoria": "ADM",
+                    "id_subcategoria": 40,
+                    "subcategoria": "Cafe",
+                    "data_inicio_formatada": "18\/11\/2022",
+                    "data_fim_formatada": null,
+                    "hora_limite_formatada": "08:00",
+                    "descricao": null,
+                    "frequencia_id": 143,
+                    "frequencia": "\u00danico",
+                    "id_loja": null,
+                    "loja": null,
+                    "id_usuario": 24379,
+                    "id_cargo": null,
+                    "id_job_status": 942072,
+                    "data_job": "2022-11-24 08:00:00",
+                    "data_formatada": "01\/11\/2022",
+                    "status": 0,
+                    "motivo": "0",
+                    "data_execucao_formatada_hora": null,
+                    "status_supervisor": null
+                }
+            ]     
+        },{
+            "title": "Sex - 25/11/2022",
+            "cards":[]   
+        },{
+            "title": "Sáb - 26/11/2022",
+            "cards":[]   
+        },{
+            "title": "Dom - 27/11/2022",
+            "cards":[]   
+        },{
+            "title": "Seg - 28/11/2022",
+            "cards":[]   
+        },{
+            "title": "Ter - 29/11/2022",
+            "cards":[]   
+        },{
+            "title": "Qua - 30/11/2022",
+            "cards":[]   
+        }
+    ]    
+}

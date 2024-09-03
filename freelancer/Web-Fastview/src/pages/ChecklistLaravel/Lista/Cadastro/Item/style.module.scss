@@ -1,0 +1,47 @@
+.alert,
+.alert:hover {
+    background:rgb(220 53 69 / 10%)!important;
+    padding:12px;
+}
+
+.autoavaliacao {
+    margin:10px 0 15px!important;
+
+    svg {
+        font-size:30px;
+    }
+
+    lord-icon {
+        width:34px!important;
+        height:34px!important;
+    }
+}
+
+.system_percentage {
+    font-size:27px;
+    font-weight:500;
+
+    .small {
+        font-size:17px;
+    }
+}
+
+.actions {
+    gap:0;
+}
+
+.disabled {
+    * {
+        pointer-events:none;
+    }
+    
+    opacity:0.5;
+}
+
+.quantidade {
+    width:42px;
+
+    input {
+        text-align:center;
+    }
+}

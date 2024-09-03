@@ -1,0 +1,61 @@
+.container {
+    margin:20px 0;
+
+    .item {
+        background:#f0f4f7;
+        padding:20px;
+        border-radius:6px;
+        margin-bottom:15px;
+        display:flex;
+        align-items:flex-start;
+        gap:10px;
+
+        .documentos {
+            display:flex;
+            align-items:center;
+            gap:10px;
+            margin-bottom:10px;
+
+            [data-select],
+            [data-input] {
+                margin-bottom:0;
+            }
+
+            .tipo {
+                flex: 30%;
+            }
+
+            .documento {
+                flex:70%;
+            }
+        }
+
+        .datas {
+            display:flex;
+            align-items:center;
+            gap:10px;
+
+            [data-input] {
+                margin-bottom:0;
+            }
+
+            >div {
+                flex: 50%;
+            }
+        }
+
+        .name {
+            margin-bottom:5px;
+            
+            [data-icon] {
+                margin-left:0;
+            }
+        }
+
+        .info_funcionario {
+            p {
+                margin-bottom:0;
+            }
+        }
+    }
+}

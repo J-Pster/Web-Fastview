@@ -1,0 +1,196 @@
+/* 1 smallModuleCard  | 2 moduleRedirect |  3 smallModuleTitle |  4 smallModuleIconDiv |5 smallModuleIcon | 6 smallModuleSpan | 7 smallModuleButtom  */
+
+.moduleCard {
+    width: 100%;
+    min-height:96px;
+    height:100%;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    align-items: top;
+    gap: 4px;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    box-shadow: 0px 1px 1px 0px rgba(236, 236, 238, 0.22);
+    padding:16px;
+
+    .title {
+        display: flex;
+        gap: 10px;
+        color: #97a3b3;
+        margin-bottom:16px;
+    }
+
+    .icon_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f5f8;
+        border-radius: 8px;
+        height: 23px;
+        width: 23px;
+
+        [data-box_icon] {
+            top:-2px;
+            pointer-events:none; 
+        }
+
+        svg {
+            color:#97A3B3;            
+        }
+    }
+
+    .info {
+        .label {
+            display:block;
+            font-size:12px;
+            color:#6c737b;
+            margin-bottom:8px;
+        }
+
+        .info_item {
+            font-size:12px;
+            margin-bottom:8px;
+            color:#97A3B3;
+
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+    }
+    
+    .smallModuleButtom {
+        display:flex;
+        position: absolute;
+        color:#0C3477;
+        background-color: #f0f5f8;
+        border: none;
+        top: 0px;
+        right: 0px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 10px;
+        height: 48px;
+        width: 48px;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        font-weight: bolder;
+        pointer-events:none;
+        opacity:0;
+        transition:opacity ease .3s;
+    }
+
+    &.large {
+        min-height: 166px;
+
+        .icon_container {
+            height: 48px;
+            width: 48px;
+
+            svg {
+                color:#0C3477;
+            }
+        }
+
+        .title {
+            font-size:24px;
+            gap: 17px;
+            color:#0C3477;
+        }
+    }
+
+    &.grab {
+        cursor:grab;
+
+        &:active {
+            cursor:grabbing;
+        }
+
+        .smallModuleButtom {
+            display:none;
+        }
+    }
+
+    &.disabled {
+        box-shadow:none;
+        background:rgba(0,0,0,0.06);
+
+        >* {
+            display:none!important;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 24px 4px rgba(0, 0, 0, 0.04);
+        
+        .title {
+            color:#0C3477;
+        }
+
+        .smallModuleButtom {
+            opacity:1;
+        }
+    }
+
+    .placeholder {
+        position:absolute;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:calc(100% - 32px);
+        height:calc(100% - 32px);
+        color:#97a3b3;
+        font-size:24px;
+    }
+}
+
+.smallModuleCard:hover {
+    color: #1E5371;
+    box-shadow: 0px 4px 13px 0px rgba(182, 183, 186, 0.69);
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(182, 183, 186, 0.69);
+    -moz-box-shadow: 0px 4px 13px 0px rgba(182, 183, 186, 0.69);
+}
+
+.moduleRedirect {
+    text-decoration: none;
+    cursor: inherit;
+}
+
+.smallModuleCard:hover .smallModuleIcon {
+    color: #1E5371;
+}
+
+.smallModuleIcon {
+    background-color: #f0f5f8;
+    border-radius: 4px;
+    padding: 1px;
+    color: #8b8c8d;
+}
+
+.smallModuleSpan {
+    align-self: center;
+}
+
+@media screen and (max-width:500px){
+    .smallModuleCard {
+        font-size: 12px;
+        width: 156px;
+        height: 50px;
+    }
+
+    .moduleCard {
+        .info {
+            .label {
+                font-size:15px;
+            }
+    
+            .info_item {
+                font-size:15px;
+            }
+        }
+    }
+}

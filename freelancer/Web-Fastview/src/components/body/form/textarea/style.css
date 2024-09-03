@@ -1,0 +1,266 @@
+.editorClassName {
+    outline: none;
+    width: 100%;
+    height: 180px !important;
+    min-height: 80px;
+    text-align: left;
+    font-size: 13px;
+    background: transparent;
+    margin-bottom: 4%;
+    padding: 0px 12px;
+    overflow: auto;
+}
+
+.rdw-editor-toolbar {
+    padding: 0 !important;
+    border-radius: 2px;
+    height: 5% !important;
+    border: 1px solid #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    background: #f9f9f9 !important;
+    flex-wrap: wrap;
+    font-size: 15px;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 0 !important;
+    box-shadow: 10px -10px 10px -5px inset rgb(0 0 0 / 5%);
+}
+
+.rdw-editor-main {
+    margin: 0 !important;
+    overflow: auto !important;
+}
+
+.DraftEditor-root {
+    height: auto !important;
+}
+
+.rdw-colorpicker-modal {
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    height: 175px;
+    border: 1px solid #F1F1F1;
+    padding: 15px;
+    border-radius: 2px;
+    z-index: 100;
+    background: black;
+    box-shadow: 3px 3px 5px #bfbdbd;
+}
+
+.rdw-option-wrapper {
+    all: unset;
+    border: none !important;
+    background: none !important;
+    height: 34px !important;
+}
+
+.rdw-option-wrapper, .rdw-option-wrapper img {
+   height: 15px;
+   width: 15px;
+}
+
+.rdw-option-wrapper:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+
+.option-icon {
+    height: 15px;
+    width: 15px;
+    color: #8b91a0;
+}
+
+.rdw-link-modal img {
+    height: 15px;
+    width: 15px;
+}
+
+.rdw-link-modal {
+    height: 215px !important;
+}
+
+.rdw-link-modal-buttonsection {
+    margin-bottom: 2% !important;
+    transition: all ease .3s !important;
+}
+
+.rdw-colorpicker-modal {
+    transition: all ease .3s !important;
+    transition-timing-function: ease-in !important;
+}
+
+.rdw-colorpicker-wrapper,
+.rdw-inline-wrapper,
+.rdw-text-align-wrapper,
+.rdw-link-wrapper {
+    margin: 0 !important;
+}
+
+.quill-component-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ql-snow.ql-toolbar {
+    background: #f8fafc;
+    border-radius: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none!important;
+    margin-bottom:16px;
+}
+
+.ql-snow.ql-toolbar button {
+    align-items: center;
+    opacity: 0.6;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+    margin-left: 1px!important;
+    margin-right: 1px!important;
+}
+
+.ql-snow.ql-toolbar button:hover {
+    color: #97A3B3 !important;
+}
+
+.quill-component-editor.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 28px;
+    opacity: 0.6;
+    border: 2px solid red;
+}
+
+.ql-container.ql-snow {
+    border: none!important;
+}
+
+.ql-editor {
+    height: auto!important;
+    min-height:200px;
+    border: 1px solid #e5e9ec;
+    border-radius: 8px;
+    padding: 12px 12px 0 12px;
+    margin-bottom:10px;
+}
+
+.quill.border-primary .ql-editor {
+    border-color:#0090d9;
+}
+
+.quill.border-danger .ql-editor {
+    border-color:red;
+}
+
+.ql-snow .ql-color-picker .ql-picker-label,
+.ql-snow .ql-icon-picker .ql-picker-label {
+    padding: 2px 0.5px;
+    opacity: 0.6;
+}
+
+.ql-editor>p {
+    color: black;
+    font-size: 13px;
+}
+
+.ql-editor.ql-blank::before {
+    font-style:initial!important;
+    color:#aaa!important;
+}
+
+.ql-toolbar.ql-snow .ql-formats {
+    margin-right:0!important;
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+    border: none;
+    border-radius: 8px; 
+    margin-top:6px;
+    left:0;
+}
+
+.ql-snow .ql-tooltip {
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08)!important;
+    border:none!important;
+    border-radius:8px;
+    left:15px!important;
+}
+
+.ql-snow .ql-tooltip[data-mode=link]::before {
+    content:'Inserir link'!important;
+}
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    content:'Salvar'!important;
+}
+
+.ql-picker-label {
+    opacity:.6;
+}
+
+.ql-snow .ql-picker.ql-size {
+    width:87px!important;
+}
+
+.ql-snow .ql-picker.ql-font {
+    width:104px!important;
+}
+
+.ql-align.ql-picker.ql-icon-picker>span {
+    text-align:center;
+}
+
+.ql-align.ql-picker.ql-icon-picker>span svg {
+    height: 18px;
+    right: 0;
+    bottom: 3px;
+    position: relative;
+}
+
+.ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+    width:auto;
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    border-color:transparent!important;
+}
+
+.ql-picker-item[data-value="small"]::before,
+.ql-picker-label[data-value="small"]::before {
+    content:'Pequeno'!important;
+}
+
+.ql-picker-item[data-value="normal"]::before,
+.ql-picker-label[data-value="normal"]::before {
+    content:'Médio'!important;
+}
+
+.ql-picker-item[data-value="large"]::before,
+.ql-picker-label[data-value="large"]::before {
+    content:'Grande'!important;
+}
+
+.ql-picker-item[data-value="huge"]::before,
+.ql-picker-label[data-value="huge"]::before {
+    content:'Enorme'!important;
+}
+
+.ql-snow .ql-picker-options .ql-picker-item {
+    color:#444;
+    opacity:.6;
+}

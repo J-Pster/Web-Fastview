@@ -1,0 +1,89 @@
+/* 1 .largeModuleCard | 2 largeModuleCardTitle | 3 largeModuleIconDiv | 4 largeModuleIcon | 5 h4-module | 6 largeModuleButtom */
+
+.largeModuleCard {
+    width: 384px;
+    height: 140px;
+    min-width: 320px;
+    /* max-height: fit-content; */
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0px 4px 13px 0px rgba(230, 230, 231, 0.69);
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(228, 229, 231, 0.69);
+    -moz-box-shadow: 0px 4px 13px 0px rgba(232, 233, 235, 0.69);
+}
+
+.largeModuleCard:hover {
+    box-shadow: 0px 4px 13px 0px rgba(182, 183, 186,largeModuleCard 0.69);
+    -webkit-box-shadow: 0px 4px 13px 0px rgba(182, 183, 186, 0.69);
+    -moz-box-shadow: 0px 4px 13px 0px rgba(182, 183, 186, 0.69);
+}
+
+.largeModuleCard:hover .largeModuleButtom {
+    display: flex;
+    position: absolute;
+    color: #1E5371;
+    background-color: #f0f5f8;
+    border: none;
+    top: 0px;
+    right: 0px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 10px;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    padding-left: 14px;
+}
+
+.moduleRedirect {
+    text-decoration: none;
+}
+
+.largeModuleCardTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 10px 10px 14px;
+    color: #1E5371;
+}
+
+.largeModuleIconDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #f0f5f8;
+    border-radius: 6px;
+    padding: 1px;
+    height: 45px;
+    width: 45px;
+}
+
+.largeModuleIconDiv .largeModuleIcon {
+    color: #1E5371;
+}
+
+.h4-module {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+    .largeModuleCard {
+        width: 45%;
+        height: fit-content;
+        font-size: 14px;
+    }
+
+    .largeModuleIconDiv {
+        font-size: 12px;
+    }
+}

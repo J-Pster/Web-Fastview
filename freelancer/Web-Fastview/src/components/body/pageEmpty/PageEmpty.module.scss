@@ -1,0 +1,35 @@
+.empty {
+    width:100%;
+    height:calc(100vh - 200px);
+    min-height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    svg {
+        color:rgb(212, 212, 212);
+        font-size:150px!important;
+        display:block;
+        margin:0 auto 10px;
+    }
+
+    h2 {
+        font-weight:400;
+        color:#aaa;
+    }
+
+    button {
+        display:block;
+        margin:20px auto 0;
+    }
+
+    a {
+        text-decoration:none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .empty {
+        height:calc(100vh - 260px);
+    }
+}

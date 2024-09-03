@@ -1,0 +1,96 @@
+/* CHAT CARD */
+
+.flex-d {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.2%;
+}
+
+.job-lista-chat-card {
+    /* width: 30vw; */
+    /* height: 76.5vh; */
+    width: 592px;
+    height: 735px;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+}
+
+.job-lista-chat-user-title {
+    height: 56px;
+    padding: 0 18px 0 16px;
+    justify-self: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f5f8;
+}
+
+.text-separation-div{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    gap: 4%;
+}
+
+.text-color-blue {
+    color: #10459E;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.text-color-gray {
+    color: #81878D;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.text-color-black {
+    color: #3E4247;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.btn-lista-chat-card {
+    display: flex;
+    justify-content: end;
+    margin-right: 2.5%;
+    margin-top: 2%;
+}
+
+/* @media only screen and(max-width: 1400px) {
+    .job-lista-chat-user-title {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+    }
+} */
+
+@media only screen and(width: 375px) {
+    .job-lista-chat-card {
+        height: auto;
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+    }
+
+    .job-lista-chat-user-title {
+        height: 5.9vh;
+        padding: 0 16px 0 16px;
+        justify-self: baseline;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #f0f5f8;
+        /* color: #10459E; */
+
+    }
+}

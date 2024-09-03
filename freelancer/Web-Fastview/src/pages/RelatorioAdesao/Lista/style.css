@@ -1,0 +1,25 @@
+.between span {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .aleatoria{
+    padding-left: 50px;
+  }
+
+  .mw-none > span {
+    max-width:none!important;
+  }
+
+  #container_supervisores {
+    max-height:calc(100vh - 228px);
+    overflow:auto;
+  }
+
+  #container_lojas {
+    max-height:calc(100vh - 321px);
+    overflow:auto;
+  }

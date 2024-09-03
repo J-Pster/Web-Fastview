@@ -1,0 +1,51 @@
+.table {
+    width:400px;
+    height:calc(100vh - 190px);
+
+    .icon {
+        width:10px;
+    }
+
+    .number {
+        width:30px;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        border-radius:50%;
+        background:#e5e9eb;
+        font-size:12px;
+        font-weight:600;
+        border:1px solid #ccc;
+        display:inline-block;
+        margin-right:20px;
+    }
+
+    tr {
+        th {
+            &:last-child {
+                padding-right:10px!important;
+            }
+        }
+
+        td {
+            padding-top:7px;
+            padding-bottom:7px;
+
+            &:last-child {
+                padding-right:10px!important;
+            }
+        }
+
+        &.selected {
+            background:#ecf2f5;
+
+            td {
+                .number {
+                    background:#0090d9;
+                    border-color:#0090d9;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}

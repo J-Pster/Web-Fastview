@@ -1,0 +1,265 @@
+.tableCell {
+    position:relative;
+    padding:16px 10px;
+    font-size:16px;
+    font-weight:400;
+    color:#81878d;
+    text-transform:none;
+    white-space:nowrap;
+    background:#f0f5f8;
+
+    &:first-child {
+        padding-left:20px!important;
+    }
+
+    &:last-child {
+        padding-right:20px!important;
+    }
+
+    &.wrap {
+        white-space:initial;
+    }
+
+    svg {
+        font-size:16px;
+    }
+
+    [data-input] {
+        border:none;
+
+        input {
+            font-size:16px;
+        }
+    }
+
+    &.active {
+        color:#0090d9;
+    }
+
+    &.disabled {
+        * {
+            opacity:.9;
+            pointer-events:none;
+        }
+    }
+
+    .text_limit {
+        display:block;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+
+@media print {
+    .tableCell:first-child {
+        padding-left:0;
+    }
+
+    .tableCell:last-child {
+        padding-right:0;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+    .tableCell {
+        font-size:16px;
+        
+        svg {
+            font-size:24px;
+        }
+    }
+}
+
+.filter{
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+
+    svg {
+        font-size: 18px;
+        position: relative;
+        right: -4px;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -11px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        border-radius: 6px;
+        z-index: -1;
+    }
+
+    &:hover {
+        &:after {
+            background:rgba(0,0,0,0.04);;
+        }
+    }
+
+    &.filter__active {
+        &:after {
+            background:#eee;
+        }
+
+        svg {
+            transform:rotate(-180deg);
+        }
+    }
+
+    &.filter__filtred {
+        color:#0090d9;
+    }
+}
+
+.boxFilter {
+    position:fixed;
+    z-index:9;
+    top:100%;
+    left:0;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:6px;
+    box-shadow: 0 30px 50px -15px rgba(0,0,0,0.3);
+    text-transform:none;
+    letter-spacing:0;    
+    width:280px;
+    display:none;
+
+    &.boxFilter__active {
+        display:block;
+    }
+
+    .boxFilter__header {
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:16px 16px 0;
+        font-size:15px;
+        line-height:1;
+
+        svg {
+            cursor:pointer;
+        }
+    }
+
+    .boxFilter__body {
+        padding:13px 16px 16px;
+
+        .boxFilter__title {
+            font-size:15px;
+        }
+
+        .boxFilter__close {
+            font-size:14px;
+        }
+
+        input {
+            font-size:14px;
+        }
+
+        [class="DatePicker "] {
+            width:100%;
+        }
+
+        label {
+            font-size:14px;
+        }
+    }    
+
+    .boxFilter__footer {
+        border-top:1px solid #ddd;
+        padding:13px 16px;
+
+        button{
+            padding:6px 15px;
+            margin-top:0;
+        }
+    }
+
+    .checkbox__items {
+        border-top:1px solid #ddd;
+        margin:0;
+        padding:10px 5px 8px;
+        text-align:left;
+        max-height: calc(100vh - 440px);
+        overflow: auto;
+        position:relative;
+
+        [data-input] {
+            border:none;
+        }
+
+        &>div {
+            display:flex;
+            width:100%;
+            position:relative;
+            z-index:1;
+            padding-top:3px;
+            padding-bottom:3px;
+
+            &:last-child {
+                z-index:3;
+            }
+        }
+
+        &:after {
+            // content:'';
+            position:absolute;
+            bottom:0;
+            background:linear-gradient(to top, #fff, transparent);
+            width:calc(100% - 8px);
+            height:50px;
+            z-index:2;
+        }
+
+        label {
+            min-width:calc(100% - 15px);
+            max-width:100%;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            text-transform:capitalize;
+            color:#576475;
+            font-size:14px;
+        }
+    }
+
+    [data-input] {
+        padding:6px 12px;
+        border: 1px solid #e5e9ec;
+    }
+}
+
+@media screen and (max-width:768px){
+    .boxFilter {
+        position: fixed;
+        top: initial!important;
+        bottom:0;
+        left: 0!important;
+        width: 100%;
+        height: calc(100vh - 60px);
+        z-index: 9;
+    }
+}
+
+@media print {
+    .filter{    
+        svg {
+            display:none;
+        }
+    }
+
+    .tableCell {    
+        &:first-child {
+            padding-left:0!important;
+        }
+
+        &:last-child {
+            padding-right:0!important;
+        }
+    }
+}

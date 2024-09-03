@@ -1,0 +1,86 @@
+.rdt_TableHeader {
+    all: unset;
+    background-color: #e5e9ec !important;
+    color: #757575 !important;
+    font-size: 1.4rem;
+    padding-left: 0px !important;
+    min-height: 50px!important;
+}
+
+.sc-bjfHbI {
+    font-weight: 300 !important;
+}
+
+.rdt_TableRow {
+    border: none !important;
+    border-top: 1px solid #e8edf1 !important;
+    font-size: 14px !important;
+    color: #576475 !important;
+}
+
+.rdt_TableRow:hover {
+    background-color: #f8f8f8 !important;
+    cursor: pointer;
+}
+
+.kVrXuC {
+    all: inherit !important;
+    background-color: none !important;
+}
+
+.rdt_TableHeadRow {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    color: #6f7b8a !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none !important;
+    box-shadow: 0 5px 10px -7px rgba(0, 0, 0, 0.1);
+    z-index: 15;
+}
+
+.bQdYbR {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 60px;
+}
+
+.dApqnJ {
+    height: calc(100vh - 220px) !important;
+    background-color: #ffffff;
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+
+}
+
+/* .rdt_TableCol {
+    background-color: tomato;
+} */
+
+/* .rdt_TableCol_Sortable {
+    background-color: thistle;
+} */
+
+/* .rdt_TableCell {
+    background-color: violet;
+} */
+
+
+/* .rdt_TableFooter {
+    background-color: cadetblue;
+} */
+
+/* .rdt_TableHead {
+    background-color: purple!important;
+} */
+
+/* .rdt_TableHeadRow {
+    background-color: peachpuff;
+} */
+
+/* .rdt_TableBody {
+    background-color: gray;
+}  */

@@ -1,0 +1,9 @@
+.titleDivComunicados{
+    font-weight: lighter;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row!important;
+    color: #4c5058;
+    font-size: 1.4rem;
+    justify-content: space-between;
+}

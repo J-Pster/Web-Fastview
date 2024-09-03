@@ -1,0 +1,214 @@
+.navbar {
+    padding:24px;
+    border-bottom:1px solid #e4e4e4;
+    position:relative;
+    z-index:9;
+
+    >div {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        &.disabled {
+            pointer-events:none;
+            opacity:.6;
+        }
+    }
+
+    .actions {
+        display:flex;
+    }
+
+    .icons {
+        display: flex;
+        gap: 10px;
+        margin-left: 30px;
+
+        [data-button] {
+            margin-top: -3px;
+            margin-bottom: -6px;
+        }
+
+        button {
+            white-space:nowrap;
+        }
+    }
+
+    .filters {
+        display:flex;
+        align-items:center;
+        gap:25px;
+
+        [data-select],
+        [data-input] {
+            background:transparent;
+            padding:0;
+            border:none;
+
+            [data-box_icon] {
+                display:none;
+            }
+
+            input,
+            label {
+                font-size:14px;
+            }
+        }
+
+        // * {
+        //     color:#81878D;
+        // }
+
+        [class="react-datepicker-wrapper"] {
+            width:90px;
+        }
+
+        [data-month] {
+            [class="react-datepicker-wrapper"] {
+                width:60px;
+            }
+        }
+
+        [data-select] {
+            width:auto;
+
+   
+
+            >div {
+                >div {
+                    font-size:14px;
+                    background:transparent;
+
+                    >div:first-child {
+                        padding:0;
+                        margin-right:5px;
+
+                        >div {
+                            margin:0;
+                        }
+                    }
+
+                    >div:nth-child(2) {
+                        >div {
+                            padding:0;
+                        }
+                    }
+
+                    [data-value] {
+                        margin:0;
+                        padding:0;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style:none;
+        padding:0;
+        margin:0;
+        display:flex;
+        gap:24px;
+    }
+}
+
+// LAPTOP
+@media screen and (max-width:1280px){
+    .navbar {
+        .filters {
+            gap: 15px;
+        }
+
+        ul {
+            gap:15px;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width:500px){
+    .navbar {
+        border-bottom:none;
+        padding-bottom:0;
+        overflow-x:auto;
+        padding-left:0;
+        padding-right:0;
+
+        .menu {
+            width:100%;
+            border-bottom:1px solid #e4e4e4;
+            padding-top:4px;
+            padding-bottom:24px;
+            padding-left:24px;
+            padding-right:24px;
+            overflow-x:auto;
+
+            &::-webkit-scrollbar {
+                width:0;
+                height:0
+            }
+        }
+
+        .actions {
+            border-left:1px solid #ddd;
+            padding-left:20px;
+            margin-left:20px;
+
+            .icons {
+                margin-left:0;
+            }
+        }
+
+        .filters {
+            display:block;
+            background:#fff;
+            border-radius:8px;            
+            border:1px solid #e4e4e4;
+            margin:24px 24px 0;
+            gap: 25px;
+
+            .active {
+                background:#f0f0f0;
+            }
+
+            >div {
+                padding:16px 20px;
+            }
+
+            svg {
+                font-size:18px;
+            }
+
+            .items {
+                >div {
+                    border-bottom:1px solid #ddd;
+                    padding-bottom:15px;
+                    margin-bottom:15px;
+
+                    &:last-child {
+                        border-bottom:none;
+                        padding-bottom:0;
+                        margin-bottom:0;
+                    }
+                }
+            }
+        }
+
+        ul {
+            gap: 24px;
+        }
+    }
+}
+
+// IMPRESSÃO
+@media print {
+    .navbar {
+        padding-left:0;
+        padding-right:0;
+        display:none;
+
+        .icons {
+            display:none;
+        }
+    }
+}

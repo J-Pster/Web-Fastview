@@ -1,0 +1,9 @@
+.cardContainerVM {
+    display: inline-block;
+    width: calc(20% - 5px);
+    padding-bottom: 0px;
+    margin-right: 5px;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+}

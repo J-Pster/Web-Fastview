@@ -1,0 +1,29 @@
+.color_container {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+    .color {
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        cursor:pointer;
+        position:relative;
+        text-align:center;
+        line-height:30px;
+
+        svg {
+            color:#fff;
+            font-size:14px;
+        }
+
+        &.blank {
+            border:1px solid #ddd;
+
+            svg {
+                color:#aaa;
+                top:-1px;
+            }
+        }
+    }
+}

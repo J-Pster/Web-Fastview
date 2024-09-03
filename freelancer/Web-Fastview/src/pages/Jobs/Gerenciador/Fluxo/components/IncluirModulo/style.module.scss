@@ -1,0 +1,13 @@
+.container {
+    position:relative;
+
+    &:before {
+        content:'';
+        position:absolute;
+        top:50%;
+        right:calc(100% + 5px);
+        width:25px;
+        height:2px;
+        background:#ddd;
+    }
+}

@@ -1,0 +1,13 @@
+.titleNews {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    gap: 2%;
+}
+
+.iconTitle{
+    font-size: 17px!important;
+}
+

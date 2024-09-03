@@ -1,0 +1,15 @@
+.icon_drag {
+    position: absolute;
+    top: 11px;
+    z-index: 1;
+    left: 13px;
+    cursor:grab;
+
+    [data-box_icon] {
+        pointer-events:none;
+    }
+
+    &.smallCard {
+        top:5px;
+    }
+}

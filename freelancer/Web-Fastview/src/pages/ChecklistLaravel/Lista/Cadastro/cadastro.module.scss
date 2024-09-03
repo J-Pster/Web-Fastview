@@ -1,0 +1,9 @@
+.form {
+    [class="infinite-scroll-component__outerdiv"] {
+        position:initial;
+        
+        >div {
+            overflow:visible!important;
+        }
+    }
+}

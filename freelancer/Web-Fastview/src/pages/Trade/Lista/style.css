@@ -1,0 +1,38 @@
+.trade-background {
+    border-radius: 100px;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    min-width: 70px;
+    padding: 3px 12px;
+    text-align: center;
+    width: auto;
+}
+
+.trade-background.green {
+    background: #098906
+}
+.trade-background.gray {
+    background: #BDC3CB
+}
+.trade-background.blue {
+    background: #10459E
+}
+.trade-background.red{
+    background: #F2383A;
+    color: #fff!important;
+}
+
+.div-trade-btn{
+    position: absolute;
+}
+.mini-delete-btn-trade{
+    position: relative;
+    width: 10px!important;
+    height: 10px!important;
+    /* bottom: 12px; */
+    /* right: 12px; */
+    bottom: 6px;
+    right: 10px;
+}

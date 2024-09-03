@@ -1,0 +1,19 @@
+.last_answer {
+    background: #f8f9fa;
+    padding: 9px 10px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    cursor: pointer;
+    text-align:center;
+
+    [data-box_icon] {
+        pointer-events:none;
+    }
+}
+
+.checklist_cadastro {
+    [class="infinite-scroll-component__outerdiv"] > div {
+        overflow:visible!important;
+    }
+}

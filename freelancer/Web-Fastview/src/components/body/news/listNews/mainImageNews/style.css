@@ -1,0 +1,12 @@
+.mainImage {
+    height: auto;
+    width: 100%;
+}
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 375px) {
+    .mainImage {
+        width: 100%;
+    }
+}

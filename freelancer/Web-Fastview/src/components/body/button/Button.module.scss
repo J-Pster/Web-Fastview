@@ -1,0 +1,122 @@
+.button {
+    background:#fff;
+    outline:none;
+    border:1px solid #ddd;
+    border-radius:4px;
+    padding:8px 12px;
+    font-size:14px;
+    white-space:nowrap;
+
+    &:hover {
+        background:#eee;
+    }
+    
+    &.button__default {
+        background: #3186C3;
+        border-color: #3186C3;
+        color: #fff;
+        border-radius: 100px;
+        padding: 5px 24px;
+        font-size: 13px;
+
+        &:hover {
+            background: #2a78af;
+            border-color: #2a78af;
+        }
+
+        &.error {
+            background: #F2383A;
+            border-color: #F2383A;
+    
+            &:hover {
+                background: #BA090B;
+            }
+        }
+
+        &.button__danger {
+            background: #F2383A;
+            border-color: #F2383A;
+    
+            &:hover {
+                background: #BA090B;
+            }
+        }
+    }
+
+    &.button__white {
+        background:#fff;
+        border-color:#ddd;
+
+        &:hover {
+            background:#eee;
+        }
+    }
+
+    &.button__disabled {
+        pointer-events:none;
+        opacity:.5;
+    }
+
+    &.button__loading {
+        pointer-events:none;
+        position:relative;
+        overflow:hidden;
+        border:none;
+        background:#eff1f3;
+        color:transparent;
+
+        &:after {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100px;
+            height:100%;
+            background:rgba(255,255,255,0.3);
+            filter:blur(10px);
+            z-index:1;
+            animation: linear infinite;
+            animation-name: shine;
+            animation-duration:.5s;
+            -webkit-animation: linear infinite;
+            -webkit-animation-name: shine;
+            -webkit-animation-duration:.5s;
+        }
+    }
+
+    svg,
+    lord-icon {
+        color:#fff;
+        margin-left:5px;
+        margin-right:0;
+    }
+
+    [data-box_icon] {
+        pointer-events:none;
+    }
+}
+
+@keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+    .button {
+        font-size:16px;
+    }
+}

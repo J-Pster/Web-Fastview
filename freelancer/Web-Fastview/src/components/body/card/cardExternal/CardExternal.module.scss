@@ -1,0 +1,67 @@
+.card__external {
+    background:#e5e9ec;
+    position:fixed;
+    top:0;
+    right:0;
+    height:100%;
+    box-shadow:0 2px 50px -20px rgb(0 0 0 / 50%);
+    width:calc(100% - 442px);
+    padding:30px;
+    overflow-y:auto;
+    transform:translateX(110%);
+    transition:transform ease .5s;
+    z-index:10;
+
+    // &::after {
+    //     content: '';
+    //     background-color: #ccc;
+    //     position: absolute;
+    //     top:0;
+    //     left: 0;
+    //     width: 4px;
+    //     height: 100%;
+    //     cursor: ew-resize;
+    // }
+
+    .card {
+        width:100%!important;
+
+        .container {
+            >div:last-child {
+                >div {
+                    width:100%!important;
+                }
+            }
+
+            .bg__white {
+                box-shadow:0 2px 4px -2px rgba(0, 0, 0, 0.5);
+                border-radius:4px;
+                background:#fff;
+                padding:20px;
+            }
+        }
+    }
+
+    form {
+        width:100%!important;
+        box-shadow:none;
+        padding:0;
+    }
+
+    .body__container {
+        box-shadow:0 30px 20px -35px inset rgb(0 0 0 / 10%);
+        padding:20px;
+    }
+
+    &.active {
+        transform:translateX(0);
+    }
+
+    .container__messages {
+        max-height:calc(100vh - 64px);
+
+        >div {
+            max-height:calc(100vh - 367px);
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.newsMainContainer {
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    max-width:100%;
+    margin: 0 0 25px 0;
+    padding:20px;
+    border-radius:10px;
+    position: relative;
+    box-shadow: 1rem 1rem 2.5rem 0 rgba(0, 0, 0, .05);
+    transition: ease 0.5s;    
+    
+    &.loading {
+        height:500px;
+        background:#d9dde0;
+        pointer-events:none;
+        margin-bottom:40px;
+        overflow:hidden;
+
+        &:after {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100px;
+            height:100%;
+            background:rgba(255,255,255,0.3);
+            filter:blur(10px);
+            z-index:1;
+            animation: linear infinite;
+            animation-name: shine;
+            animation-duration:.5s;
+            -webkit-animation: linear infinite;
+            -webkit-animation-name: shine;
+            -webkit-animation-duration:.5s;
+        }
+    }
+}
+
+@keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        left:-200px;
+    }
+    100% {
+        left:calc(100% + 200px);
+    }
+}
+
+.newsMainContainer:hover {
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    box-shadow: 0px 0px 18px 2px rgba(186, 186, 186, 0.56);
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(186, 186, 186, 0.56);
+    -moz-box-shadow: 0px 0px 18px 2px rgba(186, 186, 186, 0.56);
+}
+
+/* @media screen and (max-width: 375px) {
+    .newsMainContainer{
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 540px) {
+    .newsMainContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .newsMainContainer {
+        width: calc(100% - 80px);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .newsMainContainer{
+        width:100%;
+    }
+}
